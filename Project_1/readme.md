@@ -42,7 +42,6 @@ This code is run and tested on Python 3.6 on Windows 10  machine with no issues.
 This is the main IPython Notebook, run it using Jupyter notebook in your local system or it can be run using [Google Collab](https://colab.research.google.com).
 
 ## Results
-* The following are the classification accuracy and Confusion Matrix of the baseline model:
-### Accuracy
+* Below is the graph for accuracy and Loss of the baseline model:
 ![Accuracy](https://github.com/smrutisanchita/CE888/blob/main/Project_1/accuracy.PNG)
 
