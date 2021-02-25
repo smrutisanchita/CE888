@@ -1,7 +1,48 @@
-For this project work, I have used FLAME Dataset (Link to the files given below). At first I have loaded the image files into jupyter notebook and checked ofr the distribution of each class. Then have prepared a baseline CNN model which gives an test accuracy of 65%.
+# Classification of forest pile burn images into "fire vs nofire" using Convolution Neural Networks
 
-Steps to execute the jupyter notebook.
-1. download the dataset,Unzip the folders and keep it in same directory as the notebook
-2. execute the notebook
+### Dataset
+* The dataset is downloaded from IEEE dataport and you can download datasets from [here](https://essexuniversity-my.sharepoint.com/:f:/g/personal/hr17576_essex_ac_uk/EplQh6rwA8pJhHP0jKfg6-kBVHyb1BE9TCAj4MVR0tyOEA?e=Uo6PLD).
+* Training/Validation dataset: This dataset has 39,375 frames that are resized to 254x254 and the image format is JPG. This data is in a directory called training, which contains 2 sub-directories, one per class.
+* Test dataset : Test datset has 8,617 frames that are labeled.This data is in a directory called test, which contains 2 sub-directories, one per class.
 
-Dataset link : https://essexuniversity-my.sharepoint.com/personal/hr17576_essex_ac_uk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhr17576%5Fessex%5Fac%5Fuk%2FDocuments%2FData%2FFire%2Dvs%2DNoFire&originalPath=aHR0cHM6Ly9lc3NleHVuaXZlcnNpdHktbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvaHIxNzU3Nl9lc3NleF9hY191ay9FcGxRaDZyd0E4cEpoSFAwaktmZzYta0JWSHliMUJFOVRDQWo0TVZSMHR5T0VBP3J0aW1lPXZWSHJnR25aMkVn
+* This table shows the directory structure of training data:
+```bash
+/Training
+        ├── Fire/*.jpg
+        ├── No_Fire/*.jpg
+```
+* The test direcotry looks like this:
+```bash
+/Test
+    ├── Fire/*.jpg
+    ├── No_Fire/*.jpg
+```
+
+### Model
+* Fire classifcation model of this project is based on the simple CNN Network:
+* The CNN model has 3 convolutional layers followed by a max-pooling layers.
+* A dropout layer is added after 3rd maxpool operation to avoid overfitting.
+
+![BaseModel:Simple CNN](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Baseline1.png). 
+
+## Requirements
+* os
+* cv2
+* numpy
+* Keras 
+* Tensorflow
+* scikitlearn
+* matplotlib.pyplot
+* Seaborn
+* pathlib
+* PIL
+
+## Code
+This code is run and tested on Python 3.6 on Windows 10  machine with no issues.
+This is the main IPython Notebook, run it using Jupyter notebook in your local system or it can be run using [Google Collab](https://colab.research.google.com).
+
+## Results
+* The following are the classification accuracy and Confusion Matrix of the baseline model:
+### Accuracy
+![Accuracy](https://github.com/smrutisanchita/CE888/blob/main/Project_1/accuracy.PNG)
+
