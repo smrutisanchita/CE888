@@ -1,15 +1,29 @@
 ## Convolutional Neural Network Perspective on FLAME Dataset
 
-### How to run the code 
+About The code :
 
-####Steps:
+The code is available in code_files folder
+ 
+
+
+### About the code Files 
+* [main.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/main.py) -> The code runs through this file as it has main function. image is loaded in this file
+
+*  [Preprocessing.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/PreProcessing.py) - This file takes care of the image pre-processing - Augmentation
+*  [Xception_model.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/Xception_Model.py) - This file contails all the model creation , model traning and evaluation code
+
+### How to run the code 
+###Steps:
+
 #####1. In the Code_files folder run the main.py file  
+
         -> This will start the program and load the images
+        
 #####2. The program will ask user to input " 1 for training , 2 for Loading the saved model for evaluation" 
+
         -> If the user wants to train a new model then press 1 else if the user wants to load the saved modela nd weights and just wants to evaluate then press 2
         
-#####3. The program will print the evaluation matrices. The program uses all the 3 files  
-        -> main.py, PreProcessing.py and Xception_model.py
+#####3. The program will print the evaluation matrices. 
 
 
 ### Dataset
