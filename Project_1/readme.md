@@ -7,6 +7,9 @@
 *  [Preprocessing.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/PreProcessing.py) - This file takes care of the image pre-processing - Augmentation
 *  [Xception_model.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/Xception_Model.py) - This file contails all the model creation , model traning and evaluation code
 
+There is another jupyter notebook [Xception_model.ipynb](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/Xception_model.ipynb) which hass all the outputs for the code. 
+
+
 ### How to run the code 
 ### Steps:
 
