@@ -1,10 +1,5 @@
 ## Convolutional Neural Network Perspective on FLAME Dataset
 
-About The code :
-
-The code is available in code_files folder
- 
-
 
 ### About the code Files 
 * [main.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/main.py) -> The code runs through this file as it has main function. image is loaded in this file
@@ -13,17 +8,17 @@ The code is available in code_files folder
 *  [Xception_model.py](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Code_Files/Xception_Model.py) - This file contails all the model creation , model traning and evaluation code
 
 ### How to run the code 
-###Steps:
+### Steps:
 
-#####1. In the Code_files folder run the main.py file  
+##### 1. In the Code_files folder run the main.py file  
 
         -> This will start the program and load the images
         
-#####2. The program will ask user to input " 1 for training , 2 for Loading the saved model for evaluation" 
+##### 2. The program will ask user to input " 1 for training , 2 for Loading the saved model for evaluation" 
 
         -> If the user wants to train a new model then press 1 else if the user wants to load the saved modela nd weights and just wants to evaluate then press 2
         
-#####3. The program will print the evaluation matrices. 
+##### 3. The program will print the evaluation matrices. 
 
 
 ### Dataset
@@ -43,7 +38,6 @@ Data Augmentaion is done using image generator.
 3. Inception V3 
 4. Xception  - We acheived best results with Xception Model.
 
-![BaseModel:Simple CNN](https://github.com/smrutisanchita/CE888/blob/main/Project_1/val_acc.JPG). 
 
 ## Requirements
 * os
@@ -58,12 +52,17 @@ Data Augmentaion is done using image generator.
 * PIL
 
 ## Code
-This code is run in Kaggle Kernel with GPU Enabled
+This code is run in Kaggle Kernel with GPU Enabled.
 
 ## Results
 * Below is the graph for accuracy and Loss of all the Models on Validation dataset
+
 ![Accuracy](https://github.com/smrutisanchita/CE888/blob/main/Project_1/val_acc.JPG)
 
 ![Loss](https://github.com/smrutisanchita/CE888/blob/main/Project_1/val_loss.JPG)
+
+#### Confusion Matrix of Xception Model
+
+![Confusion Matrix](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Xception_cm.JPG)
 
 
