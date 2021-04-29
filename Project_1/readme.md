@@ -72,6 +72,10 @@ This code is run in Kaggle Kernel with GPU Enabled.
 
 #### Confusion Matrix of Xception Model
 
-![Confusion Matrix](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Xception_cm.JPG)
+![Confusion Matrix](https://github.com/smrutisanchita/CE888/blob/main/Project_1/Xception_CM.JPG)
 
+
+#### Evaluation of all models 
+
+![Evaluation](https://github.com/smrutisanchita/CE888/blob/main/Project_1/mp.JPG)
 
