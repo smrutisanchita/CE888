@@ -38,6 +38,12 @@ Data Augmentaion is done using image generator.
 3. Inception V3 
 4. Xception  - We acheived best results with Xception Model.
 
+Model Saved Weights:
+
+As GitHub doesnot allow to load more than 100mb file , I have uploaded the model and weights file for Xception model in kaggle along with the dataset [here](https://www.kaggle.com/smrutisanchitadas/flame-dataset-fire-classification)
+
+* Xception_saved_model.json  - is the model 
+* Xception_saved_weights.h5 - is the saved final weights 
 
 ## Requirements
 * os
