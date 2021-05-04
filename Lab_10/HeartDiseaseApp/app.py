@@ -14,7 +14,7 @@ with open('Models/Pickle_dtc_Model.pkl', 'rb') as f:
 with open('Models/Pickle_knn_Model.pkl', 'rb') as f:
     KNN = pickle.load(f)
 
-with open('Models/Pickle_rfc_model.pkl', 'rb') as f:
+with open('Models/Pickle_rfc_Model.pkl', 'rb') as f:
     RandomForest = pickle.load(f)
 
 # with open('Models/Pickle_xgbc_Model.pkl', 'rb') as f:
@@ -75,9 +75,9 @@ def my_form_post():
         target = get_predictions(Age, Sex, ChestPainType, RestBP,Cholestrol,FBS,RestECG,MaxHeartRate,ExerAngina,PrevPeak,Slope,NoofMajorVessels,ThalRate,model)
 
         if target==1:
-            sale_making = 'Person has Heart Disease'
+            sale_making = 'Person is likely to have Heart Disease'
         else:
-            sale_making = 'Person Doesnot have heart Disease'
+            sale_making = 'Person is not likely to have heart Disease'
 
         return render_template('home.html', target = target, sale_making = sale_making)
     else:
